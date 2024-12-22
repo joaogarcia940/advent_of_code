@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" -S /mnt/c/Users/CTW00728/advent -B /mnt/c/Users/CTW00728/advent/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/CTW00728/advent/cmake-build-debug

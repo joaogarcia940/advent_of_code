@@ -1,0 +1,10 @@
+.idea/
+.vs/
+advent.sln
+advent.vcxproj
+advent.vcxproj.filters
+advent.vcxproj.user
+advent/
+solution.exe
+solution.obj
+
