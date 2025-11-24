@@ -24,7 +24,7 @@ class MapInterpreter:
         possible_guard_representations = ["<", "^", ">", "v"]
         mask = np.isin(self.map, possible_guard_representations)
         positions = np.argwhere(mask)
-        assert positions.shape[0] == 1, "Found more than one guard"
+        assert positions.shape[0] == 1, f"Found {positions.shape[0]} guards, expected 1"
         return tuple(positions[0])
 
     def initial_guard_direction(self, guard_pos: Tuple[int, int]) -> Direction:
@@ -140,10 +140,16 @@ class MapInterpreter:
 
 
 class Simulator:
-    def __init__(self, map_array: np.ndarray):
+    def __init__(self, map_array: np.ndarray, test_loops: bool = True):
         self.map = map_array
+        self.original_map = map_array.copy()  # Save original map state
         self.interpreter = MapInterpreter(self.map)
+        self.original_obstructions = (
+            self.interpreter.obstruction_positions()
+        )  # Cache original obstructions
         self.loop_positions = set()
+        self.is_loop = False
+        self.test_loops = test_loops  # Whether to test for loop positions
 
     def run(self):
         guard_pos = self.interpreter.initial_guard_position()
@@ -159,19 +165,39 @@ class Simulator:
             self.commit_move(guard_pos, direction)
 
     def run_loop_simulator(self, guard_pos, direction):
+        if not self.test_loops:
+            return
+
         next_position = self.interpreter.next_position(guard_pos, direction)
         if next_position is None:
             return
-        if any(np.array_equal(next_position, obs) for obs in self.interpreter.obstruction_positions()):
+        # Check against original obstructions, not current map state
+        if any(
+            np.array_equal(next_position, obs) for obs in self.original_obstructions
+        ):
             return
 
-        back_up_letter = self.map[next_position]
-        self.map[next_position] = "O"
-        loop_sim = LoopSimulator(self.map, guard_pos, direction)
+        # Create a copy of the ORIGINAL map (not the current state with X's)
+        map_copy = self.original_map.copy()
+        map_copy[next_position] = "O"
+
+        # The original map should have the guard symbol, but just to be safe,
+        # restore it if it's missing
+        original_interp = MapInterpreter(self.original_map)
+        original_guard_pos = original_interp.initial_guard_position()
+        original_guard_dir = original_interp.initial_guard_direction(original_guard_pos)
+
+        # Ensure the guard symbol is in map_copy
+        if map_copy[original_guard_pos] != original_guard_dir.value:
+            map_copy[original_guard_pos] = original_guard_dir.value
+
+        # Create a new simulator that starts from the beginning, without loop testing
+        loop_sim = Simulator(map_copy, test_loops=False)
         loop_sim.run()
-        if loop_sim.found_loop():
+
+        # If the main simulation detected a loop, the obstacle creates a loop
+        if loop_sim.is_loop:
             self.loop_positions.add(next_position)
-        self.map[next_position] = back_up_letter
 
     def commit_move(self, guard_pos, direction):
         self.write_X(guard_pos)
@@ -189,9 +215,10 @@ class Simulator:
                 guard_pos, direction, next_obstruction
             )
             direction = self.interpreter.turn_right(direction)
-            
+
             move_key = (tuple(guard_pos), direction)
             if move_key in guard_move_set:
+                self.is_loop = True
                 break
             guard_move_set.add(move_key)
         return guard_pos, direction
@@ -227,28 +254,28 @@ def file_writer(file_path: Path, result: np.ndarray):
 
 class LoopSimulator(Simulator):
     def __init__(self, map, initial_guard_pos, initial_direction):
-        super().__init__(map)
+        super().__init__(map, test_loops=False)  # Don't test for nested loops
         self.initial_guard_pos = initial_guard_pos
         self.initial_direction = initial_direction
-        self.is_loop = False
+        self.is_loop = False  # Reset the flag for this simulation
 
     def run(self):
         next_direction = self.interpreter.turn_right(self.initial_direction)
-        next_guard_pos = self.interpreter.next_position(self.initial_guard_pos, next_direction)
-        while next_guard_pos == self.interpreter.next_obstruction(self.initial_guard_pos, next_direction):
+        next_guard_pos = self.interpreter.next_position(
+            self.initial_guard_pos, next_direction
+        )
+        while next_guard_pos == self.interpreter.next_obstruction(
+            self.initial_guard_pos, next_direction
+        ):
             next_direction = self.interpreter.turn_right(next_direction)
-            next_guard_pos = self.interpreter.next_position(self.initial_guard_pos, next_direction)
+            next_guard_pos = self.interpreter.next_position(
+                self.initial_guard_pos, next_direction
+            )
         self.run_until_final_obstruction(next_guard_pos, next_direction)
 
     def commit_move(self, guard_pos, direction):
-        is_move_same_as_initial = (
-            guard_pos == self.initial_guard_pos and direction == self.initial_direction
-        )
-        is_position_different_from_start = (
-            guard_pos != self.interpreter.initial_guard_position
-        )
-        if is_move_same_as_initial and is_position_different_from_start:
-            self.is_loop = True
+        # Don't write X's or run nested loop simulators
+        pass
 
     def found_loop(self):
         return self.is_loop
