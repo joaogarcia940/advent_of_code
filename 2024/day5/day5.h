@@ -17,6 +17,7 @@
 #include <numeric>
 #include <unordered_map>
 #include <set>
+#include <regex>
 #include "../utils/file_reader.h"
 #include "../utils/numbers_in_string.h"
 #include "../utils/print_vector.h"

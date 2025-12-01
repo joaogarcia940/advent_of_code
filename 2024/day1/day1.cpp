@@ -1,3 +1,6 @@
-//
-// Created by CTW00728 on 12/3/2024.
-//
+#include "day1.h"
+
+int main() {
+    day1::Run();
+    return 0;
+}
