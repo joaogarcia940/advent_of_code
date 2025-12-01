@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g   CMakeFiles/advent.dir/main.cpp.o CMakeFiles/advent.dir/day1/day1.cpp.o CMakeFiles/advent.dir/day2/day2.cpp.o  -o advent 
