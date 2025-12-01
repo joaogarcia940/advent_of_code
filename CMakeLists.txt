@@ -1,0 +1,34 @@
+cmake_minimum_required(VERSION 3.22)
+
+# Use clang for C++26 support
+set(CMAKE_CXX_COMPILER clang++-19)
+
+project(2025 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# enable c++26 experimental and use libc++
+add_compile_options(-std=c++2c -stdlib=libc++)
+add_link_options(-stdlib=libc++)
+
+add_executable(day1 day1/day1.cpp)
+
+enable_testing()
+
+# Build GTest from source with libc++
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/v1.15.2.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+add_executable(day1_test day1/test.cpp)
+target_link_libraries(day1_test PRIVATE gtest_main)
+target_include_directories(day1_test PRIVATE day1)
+
+include(GoogleTest)
+gtest_discover_tests(day1_test)
