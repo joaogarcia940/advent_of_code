@@ -1,0 +1,1233 @@
+reading file day7/example.txt
+Current number: 10, operation: +, current result: 0
+Trying to add to result 0 the number 10
+New result: 10
+Current number: 19, operation: +, current result: 10
+Trying to add to result 10 the number 19
+New result: 29
+10 + 19 = 29; expecting 190
+Current number: 10, operation: +, current result: 0
+Trying to add to result 0 the number 10
+New result: 10
+Current number: 19, operation: *, current result: 10
+New result: 190
+10 * 19 = 190; expecting 190
+10 * 19 = 190
+Current number: 81, operation: +, current result: 0
+Trying to add to result 0 the number 81
+New result: 81
+Current number: 40, operation: +, current result: 81
+Trying to add to result 81 the number 40
+New result: 121
+Current number: 27, operation: +, current result: 121
+Trying to add to result 121 the number 27
+New result: 148
+81 + 40 + 27 = 148; expecting 3267
+Current number: 81, operation: +, current result: 0
+Trying to add to result 0 the number 81
+New result: 81
+Current number: 40, operation: *, current result: 81
+New result: 3240
+Current number: 27, operation: +, current result: 3240
+Trying to add to result 3240 the number 27
+New result: 3267
+81 * 40 + 27 = 3267; expecting 3267
+81 * 40 + 27 = 3267
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 5, operation: +, current result: 17
+Trying to add to result 17 the number 5
+New result: 22
+17 + 5 = 22; expecting 83
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 5, operation: *, current result: 17
+New result: 85
+17 * 5 = 85; expecting 83
+Current number: 15, operation: +, current result: 0
+Trying to add to result 0 the number 15
+New result: 15
+Current number: 6, operation: +, current result: 15
+Trying to add to result 15 the number 6
+New result: 21
+15 + 6 = 21; expecting 156
+Current number: 15, operation: +, current result: 0
+Trying to add to result 0 the number 15
+New result: 15
+Current number: 6, operation: *, current result: 15
+New result: 90
+15 * 6 = 90; expecting 156
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: +, current result: 14
+Trying to add to result 14 the number 6
+New result: 20
+Current number: 15, operation: +, current result: 20
+Trying to add to result 20 the number 15
+New result: 35
+6 + 8 + 6 + 15 = 35; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: +, current result: 48
+Trying to add to result 48 the number 6
+New result: 54
+Current number: 15, operation: +, current result: 54
+Trying to add to result 54 the number 15
+New result: 69
+6 * 8 + 6 + 15 = 69; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: *, current result: 14
+New result: 84
+Current number: 15, operation: +, current result: 84
+Trying to add to result 84 the number 15
+New result: 99
+6 + 8 * 6 + 15 = 99; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: *, current result: 48
+New result: 288
+Current number: 15, operation: +, current result: 288
+Trying to add to result 288 the number 15
+New result: 303
+6 * 8 * 6 + 15 = 303; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: +, current result: 14
+Trying to add to result 14 the number 6
+New result: 20
+Current number: 15, operation: *, current result: 20
+New result: 300
+6 + 8 + 6 * 15 = 300; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: +, current result: 48
+Trying to add to result 48 the number 6
+New result: 54
+Current number: 15, operation: *, current result: 54
+New result: 810
+6 * 8 + 6 * 15 = 810; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: *, current result: 14
+New result: 84
+Current number: 15, operation: *, current result: 84
+New result: 1260
+6 + 8 * 6 * 15 = 1260; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: *, current result: 48
+New result: 288
+Current number: 15, operation: *, current result: 288
+New result: 4320
+6 * 8 * 6 * 15 = 4320; expecting 7290
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: +, current result: 16
+Trying to add to result 16 the number 10
+New result: 26
+Current number: 13, operation: +, current result: 26
+Trying to add to result 26 the number 13
+New result: 39
+16 + 10 + 13 = 39; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: *, current result: 16
+New result: 160
+Current number: 13, operation: +, current result: 160
+Trying to add to result 160 the number 13
+New result: 173
+16 * 10 + 13 = 173; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: +, current result: 16
+Trying to add to result 16 the number 10
+New result: 26
+Current number: 13, operation: *, current result: 26
+New result: 338
+16 + 10 * 13 = 338; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: *, current result: 16
+New result: 160
+Current number: 13, operation: *, current result: 160
+New result: 2080
+16 * 10 * 13 = 2080; expecting 161011
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: +, current result: 17
+Trying to add to result 17 the number 8
+New result: 25
+Current number: 14, operation: +, current result: 25
+Trying to add to result 25 the number 14
+New result: 39
+17 + 8 + 14 = 39; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: *, current result: 17
+New result: 136
+Current number: 14, operation: +, current result: 136
+Trying to add to result 136 the number 14
+New result: 150
+17 * 8 + 14 = 150; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: +, current result: 17
+Trying to add to result 17 the number 8
+New result: 25
+Current number: 14, operation: *, current result: 25
+New result: 350
+17 + 8 * 14 = 350; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: *, current result: 17
+New result: 136
+Current number: 14, operation: *, current result: 136
+New result: 1904
+17 * 8 * 14 = 1904; expecting 192
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: +, current result: 16
+Trying to add to result 16 the number 18
+New result: 34
+Current number: 13, operation: +, current result: 34
+Trying to add to result 34 the number 13
+New result: 47
+9 + 7 + 18 + 13 = 47; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: +, current result: 63
+Trying to add to result 63 the number 18
+New result: 81
+Current number: 13, operation: +, current result: 81
+Trying to add to result 81 the number 13
+New result: 94
+9 * 7 + 18 + 13 = 94; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: *, current result: 16
+New result: 288
+Current number: 13, operation: +, current result: 288
+Trying to add to result 288 the number 13
+New result: 301
+9 + 7 * 18 + 13 = 301; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: *, current result: 63
+New result: 1134
+Current number: 13, operation: +, current result: 1134
+Trying to add to result 1134 the number 13
+New result: 1147
+9 * 7 * 18 + 13 = 1147; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: +, current result: 16
+Trying to add to result 16 the number 18
+New result: 34
+Current number: 13, operation: *, current result: 34
+New result: 442
+9 + 7 + 18 * 13 = 442; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: +, current result: 63
+Trying to add to result 63 the number 18
+New result: 81
+Current number: 13, operation: *, current result: 81
+New result: 1053
+9 * 7 + 18 * 13 = 1053; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: *, current result: 16
+New result: 288
+Current number: 13, operation: *, current result: 288
+New result: 3744
+9 + 7 * 18 * 13 = 3744; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: *, current result: 63
+New result: 1134
+Current number: 13, operation: *, current result: 1134
+New result: 14742
+9 * 7 * 18 * 13 = 14742; expecting 21037
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: +, current result: 11
+Trying to add to result 11 the number 6
+New result: 17
+Current number: 16, operation: +, current result: 17
+Trying to add to result 17 the number 16
+New result: 33
+Current number: 20, operation: +, current result: 33
+Trying to add to result 33 the number 20
+New result: 53
+11 + 6 + 16 + 20 = 53; expecting 292
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: *, current result: 11
+New result: 66
+Current number: 16, operation: +, current result: 66
+Trying to add to result 66 the number 16
+New result: 82
+Current number: 20, operation: +, current result: 82
+Trying to add to result 82 the number 20
+New result: 102
+11 * 6 + 16 + 20 = 102; expecting 292
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: +, current result: 11
+Trying to add to result 11 the number 6
+New result: 17
+Current number: 16, operation: *, current result: 17
+New result: 272
+Current number: 20, operation: +, current result: 272
+Trying to add to result 272 the number 20
+New result: 292
+11 + 6 * 16 + 20 = 292; expecting 292
+11 + 6 * 16 + 20 = 292
+Current number: 10, operation: +, current result: 0
+Trying to add to result 0 the number 10
+New result: 10
+Current number: 19, operation: +, current result: 10
+Trying to add to result 10 the number 19
+New result: 29
+10 + 19 = 29; expecting 190
+Current number: 10, operation: +, current result: 0
+Trying to add to result 0 the number 10
+New result: 10
+Current number: 19, operation: *, current result: 10
+New result: 190
+10 * 19 = 190; expecting 190
+10 * 19 = 190
+Current number: 81, operation: +, current result: 0
+Trying to add to result 0 the number 81
+New result: 81
+Current number: 40, operation: +, current result: 81
+Trying to add to result 81 the number 40
+New result: 121
+Current number: 27, operation: +, current result: 121
+Trying to add to result 121 the number 27
+New result: 148
+81 + 40 + 27 = 148; expecting 3267
+Current number: 81, operation: +, current result: 0
+Trying to add to result 0 the number 81
+New result: 81
+Current number: 40, operation: *, current result: 81
+New result: 3240
+Current number: 27, operation: +, current result: 3240
+Trying to add to result 3240 the number 27
+New result: 3267
+81 * 40 + 27 = 3267; expecting 3267
+81 * 40 + 27 = 3267
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 5, operation: +, current result: 17
+Trying to add to result 17 the number 5
+New result: 22
+17 + 5 = 22; expecting 83
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 5, operation: *, current result: 17
+New result: 85
+17 * 5 = 85; expecting 83
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 5, operation: ||, current result: 17
+New result: 192
+17 || 5 = 192; expecting 83
+Current number: 15, operation: +, current result: 0
+Trying to add to result 0 the number 15
+New result: 15
+Current number: 6, operation: +, current result: 15
+Trying to add to result 15 the number 6
+New result: 21
+15 + 6 = 21; expecting 156
+Current number: 15, operation: +, current result: 0
+Trying to add to result 0 the number 15
+New result: 15
+Current number: 6, operation: *, current result: 15
+New result: 90
+15 * 6 = 90; expecting 156
+Current number: 15, operation: +, current result: 0
+Trying to add to result 0 the number 15
+New result: 15
+Current number: 6, operation: ||, current result: 15
+New result: 171
+15 || 6 = 171; expecting 156
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: +, current result: 14
+Trying to add to result 14 the number 6
+New result: 20
+Current number: 15, operation: +, current result: 20
+Trying to add to result 20 the number 15
+New result: 35
+6 + 8 + 6 + 15 = 35; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: +, current result: 48
+Trying to add to result 48 the number 6
+New result: 54
+Current number: 15, operation: +, current result: 54
+Trying to add to result 54 the number 15
+New result: 69
+6 * 8 + 6 + 15 = 69; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: +, current result: 74
+Trying to add to result 74 the number 6
+New result: 80
+Current number: 15, operation: +, current result: 80
+Trying to add to result 80 the number 15
+New result: 95
+6 || 8 + 6 + 15 = 95; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: *, current result: 14
+New result: 84
+Current number: 15, operation: +, current result: 84
+Trying to add to result 84 the number 15
+New result: 99
+6 + 8 * 6 + 15 = 99; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: *, current result: 48
+New result: 288
+Current number: 15, operation: +, current result: 288
+Trying to add to result 288 the number 15
+New result: 303
+6 * 8 * 6 + 15 = 303; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: *, current result: 74
+New result: 444
+Current number: 15, operation: +, current result: 444
+Trying to add to result 444 the number 15
+New result: 459
+6 || 8 * 6 + 15 = 459; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: ||, current result: 14
+New result: 100
+Current number: 15, operation: +, current result: 100
+Trying to add to result 100 the number 15
+New result: 115
+6 + 8 || 6 + 15 = 115; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: ||, current result: 48
+New result: 134
+Current number: 15, operation: +, current result: 134
+Trying to add to result 134 the number 15
+New result: 149
+6 * 8 || 6 + 15 = 149; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: ||, current result: 74
+New result: 160
+Current number: 15, operation: +, current result: 160
+Trying to add to result 160 the number 15
+New result: 175
+6 || 8 || 6 + 15 = 175; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: +, current result: 14
+Trying to add to result 14 the number 6
+New result: 20
+Current number: 15, operation: *, current result: 20
+New result: 300
+6 + 8 + 6 * 15 = 300; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: +, current result: 48
+Trying to add to result 48 the number 6
+New result: 54
+Current number: 15, operation: *, current result: 54
+New result: 810
+6 * 8 + 6 * 15 = 810; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: +, current result: 74
+Trying to add to result 74 the number 6
+New result: 80
+Current number: 15, operation: *, current result: 80
+New result: 1200
+6 || 8 + 6 * 15 = 1200; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: *, current result: 14
+New result: 84
+Current number: 15, operation: *, current result: 84
+New result: 1260
+6 + 8 * 6 * 15 = 1260; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: *, current result: 48
+New result: 288
+Current number: 15, operation: *, current result: 288
+New result: 4320
+6 * 8 * 6 * 15 = 4320; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: *, current result: 74
+New result: 444
+Current number: 15, operation: *, current result: 444
+New result: 6660
+6 || 8 * 6 * 15 = 6660; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: ||, current result: 14
+New result: 100
+Current number: 15, operation: *, current result: 100
+New result: 1500
+6 + 8 || 6 * 15 = 1500; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: ||, current result: 48
+New result: 134
+Current number: 15, operation: *, current result: 134
+New result: 2010
+6 * 8 || 6 * 15 = 2010; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: ||, current result: 74
+New result: 160
+Current number: 15, operation: *, current result: 160
+New result: 2400
+6 || 8 || 6 * 15 = 2400; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: +, current result: 14
+Trying to add to result 14 the number 6
+New result: 20
+Current number: 15, operation: ||, current result: 20
+New result: 635
+6 + 8 + 6 || 15 = 635; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: +, current result: 48
+Trying to add to result 48 the number 6
+New result: 54
+Current number: 15, operation: ||, current result: 54
+New result: 669
+6 * 8 + 6 || 15 = 669; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: +, current result: 74
+Trying to add to result 74 the number 6
+New result: 80
+Current number: 15, operation: ||, current result: 80
+New result: 695
+6 || 8 + 6 || 15 = 695; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: *, current result: 14
+New result: 84
+Current number: 15, operation: ||, current result: 84
+New result: 699
+6 + 8 * 6 || 15 = 699; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: *, current result: 48
+New result: 288
+Current number: 15, operation: ||, current result: 288
+New result: 903
+6 * 8 * 6 || 15 = 903; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: *, current result: 74
+New result: 444
+Current number: 15, operation: ||, current result: 444
+New result: 1059
+6 || 8 * 6 || 15 = 1059; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: +, current result: 6
+Trying to add to result 6 the number 8
+New result: 14
+Current number: 6, operation: ||, current result: 14
+New result: 100
+Current number: 15, operation: ||, current result: 100
+New result: 715
+6 + 8 || 6 || 15 = 715; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: *, current result: 6
+New result: 48
+Current number: 6, operation: ||, current result: 48
+New result: 134
+Current number: 15, operation: ||, current result: 134
+New result: 749
+6 * 8 || 6 || 15 = 749; expecting 7290
+Current number: 6, operation: +, current result: 0
+Trying to add to result 0 the number 6
+New result: 6
+Current number: 8, operation: ||, current result: 6
+New result: 74
+Current number: 6, operation: ||, current result: 74
+New result: 160
+Current number: 15, operation: ||, current result: 160
+New result: 775
+6 || 8 || 6 || 15 = 775; expecting 7290
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: +, current result: 16
+Trying to add to result 16 the number 10
+New result: 26
+Current number: 13, operation: +, current result: 26
+Trying to add to result 26 the number 13
+New result: 39
+16 + 10 + 13 = 39; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: *, current result: 16
+New result: 160
+Current number: 13, operation: +, current result: 160
+Trying to add to result 160 the number 13
+New result: 173
+16 * 10 + 13 = 173; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: ||, current result: 16
+New result: 1626
+Current number: 13, operation: +, current result: 1626
+Trying to add to result 1626 the number 13
+New result: 1639
+16 || 10 + 13 = 1639; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: +, current result: 16
+Trying to add to result 16 the number 10
+New result: 26
+Current number: 13, operation: *, current result: 26
+New result: 338
+16 + 10 * 13 = 338; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: *, current result: 16
+New result: 160
+Current number: 13, operation: *, current result: 160
+New result: 2080
+16 * 10 * 13 = 2080; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: ||, current result: 16
+New result: 1626
+Current number: 13, operation: *, current result: 1626
+New result: 21138
+16 || 10 * 13 = 21138; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: +, current result: 16
+Trying to add to result 16 the number 10
+New result: 26
+Current number: 13, operation: ||, current result: 26
+New result: 1039
+16 + 10 || 13 = 1039; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: *, current result: 16
+New result: 160
+Current number: 13, operation: ||, current result: 160
+New result: 1173
+16 * 10 || 13 = 1173; expecting 161011
+Current number: 16, operation: +, current result: 0
+Trying to add to result 0 the number 16
+New result: 16
+Current number: 10, operation: ||, current result: 16
+New result: 1626
+Current number: 13, operation: ||, current result: 1626
+New result: 2639
+16 || 10 || 13 = 2639; expecting 161011
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: +, current result: 17
+Trying to add to result 17 the number 8
+New result: 25
+Current number: 14, operation: +, current result: 25
+Trying to add to result 25 the number 14
+New result: 39
+17 + 8 + 14 = 39; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: *, current result: 17
+New result: 136
+Current number: 14, operation: +, current result: 136
+Trying to add to result 136 the number 14
+New result: 150
+17 * 8 + 14 = 150; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: ||, current result: 17
+New result: 195
+Current number: 14, operation: +, current result: 195
+Trying to add to result 195 the number 14
+New result: 209
+17 || 8 + 14 = 209; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: +, current result: 17
+Trying to add to result 17 the number 8
+New result: 25
+Current number: 14, operation: *, current result: 25
+New result: 350
+17 + 8 * 14 = 350; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: *, current result: 17
+New result: 136
+Current number: 14, operation: *, current result: 136
+New result: 1904
+17 * 8 * 14 = 1904; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: ||, current result: 17
+New result: 195
+Current number: 14, operation: *, current result: 195
+New result: 2730
+17 || 8 * 14 = 2730; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: +, current result: 17
+Trying to add to result 17 the number 8
+New result: 25
+Current number: 14, operation: ||, current result: 25
+New result: 839
+17 + 8 || 14 = 839; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: *, current result: 17
+New result: 136
+Current number: 14, operation: ||, current result: 136
+New result: 950
+17 * 8 || 14 = 950; expecting 192
+Current number: 17, operation: +, current result: 0
+Trying to add to result 0 the number 17
+New result: 17
+Current number: 8, operation: ||, current result: 17
+New result: 195
+Current number: 14, operation: ||, current result: 195
+New result: 1009
+17 || 8 || 14 = 1009; expecting 192
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: +, current result: 16
+Trying to add to result 16 the number 18
+New result: 34
+Current number: 13, operation: +, current result: 34
+Trying to add to result 34 the number 13
+New result: 47
+9 + 7 + 18 + 13 = 47; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: +, current result: 63
+Trying to add to result 63 the number 18
+New result: 81
+Current number: 13, operation: +, current result: 81
+Trying to add to result 81 the number 13
+New result: 94
+9 * 7 + 18 + 13 = 94; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: +, current result: 106
+Trying to add to result 106 the number 18
+New result: 124
+Current number: 13, operation: +, current result: 124
+Trying to add to result 124 the number 13
+New result: 137
+9 || 7 + 18 + 13 = 137; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: *, current result: 16
+New result: 288
+Current number: 13, operation: +, current result: 288
+Trying to add to result 288 the number 13
+New result: 301
+9 + 7 * 18 + 13 = 301; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: *, current result: 63
+New result: 1134
+Current number: 13, operation: +, current result: 1134
+Trying to add to result 1134 the number 13
+New result: 1147
+9 * 7 * 18 + 13 = 1147; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: *, current result: 106
+New result: 1908
+Current number: 13, operation: +, current result: 1908
+Trying to add to result 1908 the number 13
+New result: 1921
+9 || 7 * 18 + 13 = 1921; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: ||, current result: 16
+New result: 734
+Current number: 13, operation: +, current result: 734
+Trying to add to result 734 the number 13
+New result: 747
+9 + 7 || 18 + 13 = 747; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: ||, current result: 63
+New result: 781
+Current number: 13, operation: +, current result: 781
+Trying to add to result 781 the number 13
+New result: 794
+9 * 7 || 18 + 13 = 794; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: ||, current result: 106
+New result: 824
+Current number: 13, operation: +, current result: 824
+Trying to add to result 824 the number 13
+New result: 837
+9 || 7 || 18 + 13 = 837; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: +, current result: 16
+Trying to add to result 16 the number 18
+New result: 34
+Current number: 13, operation: *, current result: 34
+New result: 442
+9 + 7 + 18 * 13 = 442; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: +, current result: 63
+Trying to add to result 63 the number 18
+New result: 81
+Current number: 13, operation: *, current result: 81
+New result: 1053
+9 * 7 + 18 * 13 = 1053; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: +, current result: 106
+Trying to add to result 106 the number 18
+New result: 124
+Current number: 13, operation: *, current result: 124
+New result: 1612
+9 || 7 + 18 * 13 = 1612; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: *, current result: 16
+New result: 288
+Current number: 13, operation: *, current result: 288
+New result: 3744
+9 + 7 * 18 * 13 = 3744; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: *, current result: 63
+New result: 1134
+Current number: 13, operation: *, current result: 1134
+New result: 14742
+9 * 7 * 18 * 13 = 14742; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: *, current result: 106
+New result: 1908
+Current number: 13, operation: *, current result: 1908
+New result: 24804
+9 || 7 * 18 * 13 = 24804; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: ||, current result: 16
+New result: 734
+Current number: 13, operation: *, current result: 734
+New result: 9542
+9 + 7 || 18 * 13 = 9542; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: ||, current result: 63
+New result: 781
+Current number: 13, operation: *, current result: 781
+New result: 10153
+9 * 7 || 18 * 13 = 10153; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: ||, current result: 106
+New result: 824
+Current number: 13, operation: *, current result: 824
+New result: 10712
+9 || 7 || 18 * 13 = 10712; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: +, current result: 16
+Trying to add to result 16 the number 18
+New result: 34
+Current number: 13, operation: ||, current result: 34
+New result: 1847
+9 + 7 + 18 || 13 = 1847; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: +, current result: 63
+Trying to add to result 63 the number 18
+New result: 81
+Current number: 13, operation: ||, current result: 81
+New result: 1894
+9 * 7 + 18 || 13 = 1894; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: +, current result: 106
+Trying to add to result 106 the number 18
+New result: 124
+Current number: 13, operation: ||, current result: 124
+New result: 1937
+9 || 7 + 18 || 13 = 1937; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: *, current result: 16
+New result: 288
+Current number: 13, operation: ||, current result: 288
+New result: 2101
+9 + 7 * 18 || 13 = 2101; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: *, current result: 63
+New result: 1134
+Current number: 13, operation: ||, current result: 1134
+New result: 2947
+9 * 7 * 18 || 13 = 2947; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: *, current result: 106
+New result: 1908
+Current number: 13, operation: ||, current result: 1908
+New result: 3721
+9 || 7 * 18 || 13 = 3721; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: +, current result: 9
+Trying to add to result 9 the number 7
+New result: 16
+Current number: 18, operation: ||, current result: 16
+New result: 734
+Current number: 13, operation: ||, current result: 734
+New result: 2547
+9 + 7 || 18 || 13 = 2547; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: *, current result: 9
+New result: 63
+Current number: 18, operation: ||, current result: 63
+New result: 781
+Current number: 13, operation: ||, current result: 781
+New result: 2594
+9 * 7 || 18 || 13 = 2594; expecting 21037
+Current number: 9, operation: +, current result: 0
+Trying to add to result 0 the number 9
+New result: 9
+Current number: 7, operation: ||, current result: 9
+New result: 106
+Current number: 18, operation: ||, current result: 106
+New result: 824
+Current number: 13, operation: ||, current result: 824
+New result: 2637
+9 || 7 || 18 || 13 = 2637; expecting 21037
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: +, current result: 11
+Trying to add to result 11 the number 6
+New result: 17
+Current number: 16, operation: +, current result: 17
+Trying to add to result 17 the number 16
+New result: 33
+Current number: 20, operation: +, current result: 33
+Trying to add to result 33 the number 20
+New result: 53
+11 + 6 + 16 + 20 = 53; expecting 292
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: *, current result: 11
+New result: 66
+Current number: 16, operation: +, current result: 66
+Trying to add to result 66 the number 16
+New result: 82
+Current number: 20, operation: +, current result: 82
+Trying to add to result 82 the number 20
+New result: 102
+11 * 6 + 16 + 20 = 102; expecting 292
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: ||, current result: 11
+New result: 127
+Current number: 16, operation: +, current result: 127
+Trying to add to result 127 the number 16
+New result: 143
+Current number: 20, operation: +, current result: 143
+Trying to add to result 143 the number 20
+New result: 163
+11 || 6 + 16 + 20 = 163; expecting 292
+Current number: 11, operation: +, current result: 0
+Trying to add to result 0 the number 11
+New result: 11
+Current number: 6, operation: +, current result: 11
+Trying to add to result 11 the number 6
+New result: 17
+Current number: 16, operation: *, current result: 17
+New result: 272
+Current number: 20, operation: +, current result: 272
+Trying to add to result 272 the number 20
+New result: 292
+11 + 6 * 16 + 20 = 292; expecting 292
+11 + 6 * 16 + 20 = 292
+Part1
+Counter: 3749
+Different possibilities: 3
+Part2
+Counter: 3749
+Different possibilities: 3

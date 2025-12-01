@@ -7,4 +7,5 @@ advent.vcxproj.user
 advent/
 solution.exe
 solution.obj
-
+.clangd
+bazel-testlogs
