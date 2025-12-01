@@ -1,7 +1,6 @@
 # Build directories
 build/
 cmake-build-*/
-bazel-*
 
 # Compiled binaries
 *.o
@@ -9,8 +8,6 @@ bazel-*
 *.so
 *.dylib
 *.exe
-*.obj
-main
 
 # CMake
 CMakeCache.txt
@@ -21,49 +18,22 @@ compile_commands.json
 CTestTestfile.cmake
 _deps/
 
-# Bazel
-bazel-bin/
-bazel-out/
-bazel-testlogs/
-bazel-workspace/
-
 # IDE
+.vscode/
 .idea/
-.vs/
 *.swp
 *.swo
 *~
 .cache/
 .clangd/
-.vscode/
-
-# Visual Studio
-*.sln
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
 
 # Testing
 Testing/
+CTestTestfile.cmake
 
 # macOS
 .DS_Store
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-
 # Dependencies
 _deps/
 lib/
-
-# Solution outputs
-solution/
-solution.exe
-*.txt.bak
