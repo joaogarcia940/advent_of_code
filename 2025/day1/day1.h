@@ -1,29 +1,10 @@
 #include <print>
-#include <ranges>
-#include <fstream>
 #include <string>
 #include <vector>
+#include "../common/read_file.h"
 
-using Text = std::vector<std::string>;
 using Counter = std::size_t;
 
-inline Text ReadFile(const std::string& path)
-{
-    std::ifstream file{path};
-    if (!file.good() && !file.eof())
-    {
-        throw std::runtime_error("Error reading file: " + path);
-    }
-
-    const auto begin = std::istreambuf_iterator<char>(file);
-    const auto end = std::istreambuf_iterator<char>();
-
-    std::string all_content{begin, end};
-
-    return all_content | std::views::split('\n') |
-           std::views::transform([](auto&& str_range) { return std::string(str_range.begin(), str_range.end()); }) |
-           std::ranges::to<std::vector>();
-}
 
 enum class Direction
 {
@@ -166,7 +147,7 @@ class DialRotator
 
 inline void Run()
 {
-    FileParser parser{ReadFile("day1/real.txt")};
+    FileParser parser{ReadFile("2025/day1/real.txt")};
     DialRotator rotator{parser.ViewCommands()};
     std::print("Part 1 - {}\n", rotator.GetCountFinishedIn0());
     std::print("Part 2 - {}\n", rotator.GetCountPassed0());
