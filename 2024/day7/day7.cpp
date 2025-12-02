@@ -1,6 +1,5 @@
 #include "../utils/file_reader.h"
 #include "../utils/numbers_in_string.h"
-#include <array>
 #include <cmath>
 #include <iostream>
 #include <sstream>
@@ -51,12 +50,10 @@ class Solver
             for (const auto& expression : expressions)
             {
                 const auto expression_result = EvaluateExpression(expression);
-                // std::cout << expression << " = " << expression_result << "; expecting " << equation.result << std::endl;
                 if (expression_result == equation.result)
                 {
                     counter_ += equation.result;
                     ++different_possibilities_;
-                    // std::cout << expression << " = " << equation.result << std::endl;
                     break;
                 }
             }
@@ -95,20 +92,16 @@ class Solver
         return expressions;
     }
 
-    Number EvaluateExpression(const std::string& expression)
+    Number EvaluateExpression(std::string expression)
     {
-        std::istringstream stream(expression);
+        std::string operation{""};
+
+        auto stream = std::istringstream(expression);
         Number result{0};
         Number current_number{0};
-        std::optional<Number> previous_number{};
-        std::string operation{"+"};
-
-
-
+        operation = "+";
         while (stream >> current_number)
         {
-            // std::cout << "Current number: " << current_number << ", operation: " << operation
-            //           << ", current result: " << result << std::endl;
             if (operation == "+")
             {
                 result += current_number;
@@ -119,17 +112,15 @@ class Solver
             }
             else if (operation == "||")
             {
-                std::cout << "Trying to add to result " << result << " the number " << previous_number.value() << " the number " << current_number << std::endl;
-                result += std::stol(std::to_string(previous_number.value()) + std::to_string(current_number));
-                std::cout << "New result: " << result << std::endl;
+                result = std::stol(std::to_string(result) + std::to_string(current_number));
             }
             else
             {
-                throw std::runtime_error("Unsupported operation");
+                // throw std::runtime_error("Invalid operation");
             }
-            previous_number = current_number;
             stream >> operation;
         }
+
         return result;
     }
 
@@ -143,7 +134,6 @@ class Solver
         stream >> current_number;
         result += std::to_string(current_number);
 
-        
         return result;
     }
 
@@ -155,14 +145,14 @@ class Solver
 
 int main()
 {
-    FileReader reader{"day7/example.txt"};
+    FileReader reader{"2024/day7/real.txt"};
     day7::FileParser parser{reader.GetText()};
     const auto equations = parser.GetEquations();
     day7::Solver part_1{equations, {"+", "*"}};
-    day7::Solver part_2{equations, {"+", "*", "||"}};
     std::cout << "Part1" << std::endl;
     std::cout << "Counter: " << part_1.GetCounter() << std::endl;
     std::cout << "Different possibilities: " << part_1.GetDifferentPossibilities() << std::endl;
+    day7::Solver part_2{equations, {"+", "*", "||"}};
     std::cout << "Part2" << std::endl;
     std::cout << "Counter: " << part_2.GetCounter() << std::endl;
     std::cout << "Different possibilities: " << part_2.GetDifferentPossibilities() << std::endl;

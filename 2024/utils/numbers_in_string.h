@@ -24,7 +24,7 @@ static std::vector<long> GetNumbersInString(std::string &&line) {
     // Read each token and check if it's a number
     while (stream >> token) {
         try {
-            numbers.push_back(std::stoi(token));  // Convert to long and add to the list
+            numbers.push_back(std::stol(token));  // Convert to long and add to the list
         } catch (const std::invalid_argument &) {
             // Not a number, ignore
         } catch (const std::out_of_range &) {
