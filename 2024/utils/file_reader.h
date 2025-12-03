@@ -24,7 +24,7 @@ public:
         ReadFile();
     }
 
-    Text GetText() {
+    Text GetText() const {
         return text_;
     }
 
