@@ -18,6 +18,11 @@ inline Text ReadFile(const std::string& path)
 
     std::string all_content{begin, end};
 
+    if (all_content.empty())
+    {
+        throw std::runtime_error("File is empty: " + path);
+    }
+
     return all_content | std::views::split('\n') |
            std::views::transform([](auto&& str_range) { return std::string(str_range.begin(), str_range.end()); }) |
            std::ranges::to<std::vector>();

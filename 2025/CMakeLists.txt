@@ -17,6 +17,7 @@ add_link_options(-stdlib=libc++)
 add_executable(day1 day1/day1.cpp)
 add_executable(day2 day2/day2.cpp)
 add_executable(day3 day3/day3.cpp)
+add_executable(day4 day4/day4.cpp)
 
 enable_testing()
 
@@ -42,7 +43,12 @@ add_executable(day3_test day3/test.cpp)
 target_link_libraries(day3_test PRIVATE gtest_main)
 target_include_directories(day3_test PRIVATE day3)
 
+add_executable(day4_test day4/test.cpp)
+target_link_libraries(day4_test PRIVATE gtest_main)
+target_include_directories(day4_test PRIVATE day4)
+
 include(GoogleTest)
 gtest_discover_tests(day1_test)
 gtest_discover_tests(day2_test)
 gtest_discover_tests(day3_test)
+gtest_discover_tests(day4_test)
