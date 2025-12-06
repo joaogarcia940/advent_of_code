@@ -1,0 +1,4 @@
+reading file 2024/day9/example.txt
+Block representation: 00...111...2...333.44.5555.6666.777.888899
+Reorganized block representation: 0099811188827773336446555566..............
+Part 1 - checksum is 1928
