@@ -8,6 +8,9 @@ project(2025 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # enable c++26 experimental and use libc++
@@ -19,6 +22,7 @@ add_executable(day2 day2/day2.cpp)
 add_executable(day3 day3/day3.cpp)
 add_executable(day4 day4/day4.cpp)
 add_executable(day5 day5/day5.cpp)
+add_executable(day6 day6/day6.cpp)
 
 enable_testing()
 
@@ -52,9 +56,14 @@ add_executable(day5_test day5/test.cpp)
 target_link_libraries(day5_test PRIVATE gtest_main)
 target_include_directories(day5_test PRIVATE day5)
 
+add_executable(day6_test day6/test.cpp)
+target_link_libraries(day6_test PRIVATE gtest_main)
+target_include_directories(day6_test PRIVATE day6)
+
 include(GoogleTest)
 gtest_discover_tests(day1_test)
 gtest_discover_tests(day2_test)
 gtest_discover_tests(day3_test)
 gtest_discover_tests(day4_test)
 gtest_discover_tests(day5_test)
+gtest_discover_tests(day6_test)
