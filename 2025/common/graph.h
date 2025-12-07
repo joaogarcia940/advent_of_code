@@ -44,4 +44,16 @@ struct Graph
         from->edges.emplace_back(to, weight);
         to->edges.emplace_back(from, weight);
     }
+
+    NodePtr FindNode(const NodeDataType& data)
+    {
+        for (const auto& node : nodes)
+        {
+            if (node->data == data)
+            {
+                return node;
+            }
+        }
+        return nullptr;
+    }
 };

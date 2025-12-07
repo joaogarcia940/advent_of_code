@@ -23,6 +23,7 @@ add_executable(day3 day3/day3.cpp)
 add_executable(day4 day4/day4.cpp)
 add_executable(day5 day5/day5.cpp)
 add_executable(day6 day6/day6.cpp)
+add_executable(day7 day7/day7.cpp)
 
 enable_testing()
 
@@ -60,6 +61,10 @@ add_executable(day6_test day6/test.cpp)
 target_link_libraries(day6_test PRIVATE gtest_main)
 target_include_directories(day6_test PRIVATE day6)
 
+add_executable(day7_test day7/test.cpp)
+target_link_libraries(day7_test PRIVATE gtest_main)
+target_include_directories(day7_test PRIVATE day7)
+
 include(GoogleTest)
 gtest_discover_tests(day1_test)
 gtest_discover_tests(day2_test)
@@ -67,3 +72,4 @@ gtest_discover_tests(day3_test)
 gtest_discover_tests(day4_test)
 gtest_discover_tests(day5_test)
 gtest_discover_tests(day6_test)
+gtest_discover_tests(day7_test)
