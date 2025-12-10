@@ -85,14 +85,7 @@ class ShortestConnections
 
         for (Number i{0}; i < N; i++)
         {
-            // std::cout << "points[" << edges[i].p1_id << "," << edges[i].p2_id << "]: " << points[edges[i].p1_id].x << " " << points[edges[i].p2_id].x << std::endl;
             dsu.Unite(edges[i].p1_id, edges[i].p2_id);
-            // std::cout << "dsu.ViewParents(): ";
-            // for (const auto& parent : dsu.ViewParents())
-            // {
-            //     std::cout << parent << " ";
-            // }
-            // std::cout << std::endl;
              for (Number j{0}; j < points.size(); j++)
              {
                 dsu.FindParentAndCompress(j);
